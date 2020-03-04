@@ -24,7 +24,7 @@ defmodule Filtrex.Mixfile do
     [extra_applications: [:logger, :tzdata] ++ applications(Mix.env())]
   end
 
-  defp applications(:test), do: [:postgrex, :ecto, :ex_machina]
+  defp applications(:test), do: [:postgrex, :ecto, :ex_machina, :timex]
   defp applications(_), do: []
 
   defp description do
